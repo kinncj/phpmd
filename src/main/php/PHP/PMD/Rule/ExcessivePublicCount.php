@@ -46,9 +46,6 @@
  * @link       http://phpmd.org
  */
 
-require_once 'PHP/PMD/AbstractRule.php';
-require_once 'PHP/PMD/Rule/IClassAware.php';
-
 /**
  * This rule checks the number of public methods and fields in a given class.
  * Then it compares the number of public members against a configured threshold.
@@ -82,11 +79,11 @@ class PHP_PMD_Rule_ExcessivePublicCount
             return;
         }
         $this->addViolation(
-            $node, 
+            $node,
             array(
-                $node->getType(), 
-                $node->getName(), 
-                $cis, 
+                $node->getType(),
+                $node->getName(),
+                $cis,
                 $threshold
             )
         );

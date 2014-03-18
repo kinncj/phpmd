@@ -46,8 +46,6 @@
  * @link       http://phpmd.org
  */
 
-require_once 'PHP/PMD/AbstractRule.php';
-
 /**
  * This is a helper class that collects the specified cli arguments and puts them
  * into accessible properties.
@@ -126,7 +124,7 @@ class PHP_PMD_TextUI_CommandLineOptions
 
     /**
      * Should PHPMD run in strict mode?
-     * 
+     *
      * @var boolean
      * @since 1.2.0
      */

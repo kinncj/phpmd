@@ -46,9 +46,6 @@
  * @link       http://phpmd.org
  */
 
-require_once 'PHP/PMD/AbstractRule.php';
-require_once 'PHP/PMD/Rule/IClassAware.php';
-
 /**
  * This rule class will detect all classes with too much fields.
  *
@@ -81,11 +78,11 @@ class PHP_PMD_Rule_Design_TooManyFields
             return;
         }
         $this->addViolation(
-            $node, 
+            $node,
             array(
-                $node->getType(), 
-                $node->getName(), 
-                $vars, 
+                $node->getType(),
+                $node->getName(),
+                $vars,
                 $threshold
             )
         );

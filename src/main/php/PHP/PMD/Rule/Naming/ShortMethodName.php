@@ -46,10 +46,6 @@
  * @link       http://phpmd.org
  */
 
-require_once 'PHP/PMD/AbstractRule.php';
-require_once 'PHP/PMD/Rule/IMethodAware.php';
-require_once 'PHP/PMD/Rule/IFunctionAware.php';
-
 /**
  * This rule class will detect methods and functions with very short names.
  *
@@ -83,10 +79,10 @@ class PHP_PMD_Rule_Naming_ShortMethodName
             return;
         }
         $this->addViolation(
-            $node, 
+            $node,
             array(
-                $node->getParentName(), 
-                $node->getName(), 
+                $node->getParentName(),
+                $node->getName(),
                 $threshold
             )
         );

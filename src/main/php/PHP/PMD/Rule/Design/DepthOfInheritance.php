@@ -46,9 +46,6 @@
  * @link       http://phpmd.org
  */
 
-require_once 'PHP/PMD/AbstractRule.php';
-require_once 'PHP/PMD/Rule/IClassAware.php';
-
 /**
  * This rule will detect classes that are to deep in the inheritance tree.
  *
@@ -79,11 +76,11 @@ class PHP_PMD_Rule_Design_DepthOfInheritance
         $dit = $node->getMetric('dit');
         if ($dit >= $threshold) {
             $this->addViolation(
-                $node, 
+                $node,
                 array(
-                    $node->getType(), 
-                    $node->getName(), 
-                    $dit, 
+                    $node->getType(),
+                    $node->getName(),
+                    $dit,
                     $threshold
                 )
             );

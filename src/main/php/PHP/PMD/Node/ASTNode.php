@@ -46,8 +46,6 @@
  * @link       http://phpmd.org
  */
 
-require_once 'PHP/PMD/AbstractNode.php';
-
 /**
  * Wrapper around a PHP_Depend ast node.
  *
@@ -87,7 +85,7 @@ class PHP_PMD_Node_ASTNode extends PHP_PMD_AbstractNode
      * instance.
      *
      * @param PHP_PMD_Rule $rule The context rule instance.
-     * 
+     *
      * @return boolean
      * @SuppressWarnings("PMD.UnusedFormalParameter")
      */

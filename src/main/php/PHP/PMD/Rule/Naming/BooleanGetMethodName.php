@@ -46,9 +46,6 @@
  * @link       http://phpmd.org
  */
 
-require_once 'PHP/PMD/AbstractRule.php';
-require_once 'PHP/PMD/Rule/IMethodAware.php';
-
 /**
  * This rule tests that a method which returns a boolean value does not start
  * with <b>get</b> or <b>_get</b> for a getter.

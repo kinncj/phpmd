@@ -46,8 +46,6 @@
  * @link       http://phpmd.org
  */
 
-require_once 'PHP/PMD/AbstractRenderer.php';
-
 /**
  * This renderer output a textual log with all found violations and suspect
  * software artifacts.

@@ -10,6 +10,8 @@ if (file_exists(__DIR__ . '/../../../../autoload.php')) {
     // PEAR installation workaround
     if (strpos('@package_version@', '@package_version') === 0) {
         set_include_path(
+            get_include_path().
+            PATH_SEPARATOR.
             dirname(__FILE__) . '/../main/php' .
             PATH_SEPARATOR .
             dirname(__FILE__) . '/../../vendor/pdepend/pdepend/src/main/php' .
@@ -17,6 +19,7 @@ if (file_exists(__DIR__ . '/../../../../autoload.php')) {
             '.'
         );
     }
+    require_once 'PHP/Depend/Autoload.php';
 }
 
 // Allow as much memory as possible by default

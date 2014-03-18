@@ -46,10 +46,6 @@
  * @link       http://phpmd.org
  */
 
-require_once 'PHP/PMD/AbstractRule.php';
-require_once 'PHP/PMD/Rule/IFunctionAware.php';
-require_once 'PHP/PMD/Rule/IMethodAware.php';
-
 /**
  * This rule checks a given method or function against the configured cyclomatic
  * complexity threshold.
@@ -85,11 +81,11 @@ class PHP_PMD_Rule_CyclomaticComplexity
         }
 
         $this->addViolation(
-            $node, 
+            $node,
             array(
-                $node->getType(), 
-                $node->getName(), 
-                $ccn, 
+                $node->getType(),
+                $node->getName(),
+                $ccn,
                 $threshold
             )
         );

@@ -7,10 +7,30 @@
         "pdepend/pdepend": "*"
     },
 
+    "authors": [
+        {
+            "name": "Manuel Pichler",
+            "email": "mapi@phpmd.org",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Kinn Coelho Julião",
+            "email": "kinncj@php.net",
+            "homepage": "http://www.kinncj.eu",
+            "role": "OpenSource contributor"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
     "include-path": [
         "../../pdepend/pdepend/src/main/php",
         "src/main/php"
     ],
-    "bin": ["src/bin/phpmd"]
+    "bin": ["src/bin/phpmd"],
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    }
 }
-

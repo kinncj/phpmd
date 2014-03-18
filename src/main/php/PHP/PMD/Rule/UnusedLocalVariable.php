@@ -45,11 +45,7 @@
  * @version    SVN: $Id$
  * @link       http://phpmd.org
  */
-
-require_once 'PHP/PMD/Rule/AbstractLocalVariable.php';
-require_once 'PHP/PMD/Rule/IFunctionAware.php';
-require_once 'PHP/PMD/Rule/IMethodAware.php';
-
+ 
 /**
  * This rule collects all local variables within a given function or method
  * that are not used by any code in the analyzed source artifact.
@@ -106,7 +102,7 @@ class PHP_PMD_Rule_UnusedLocalVariable
      *        analyzed method/function node.
      *
      * @return void
-     */ 
+     */
     private function removeParameters(PHP_PMD_Node_AbstractCallable $node)
     {
         // Get formal parameter container
@@ -121,7 +117,7 @@ class PHP_PMD_Rule_UnusedLocalVariable
     }
 
     /**
-     * This method collects all local variable instances from the given 
+     * This method collects all local variable instances from the given
      * method/function node and stores their image in the <b>$_images</b>
      * property.
      *

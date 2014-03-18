@@ -45,8 +45,6 @@
  * @link      http://phpmd.org
  */
 
-require_once 'PHP/Depend/Autoload.php';
-
 /**
  * Simple factory that is used to return a ready to use PHP_Depend instance.
  *

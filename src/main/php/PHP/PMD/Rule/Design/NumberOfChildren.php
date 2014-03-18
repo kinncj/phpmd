@@ -46,9 +46,6 @@
  * @link       http://phpmd.org
  */
 
-require_once 'PHP/PMD/AbstractRule.php';
-require_once 'PHP/PMD/Rule/IClassAware.php';
-
 /**
  * This rule will detect class that have to much direct child classes.
  *
@@ -79,11 +76,11 @@ class PHP_PMD_Rule_Design_NumberOfChildren
         $threshold = $this->getIntProperty('minimum');
         if ($nocc >= $threshold) {
             $this->addViolation(
-                $node, 
+                $node,
                 array(
-                    $node-> getType(), 
-                    $node->getName(), 
-                    $nocc, 
+                    $node-> getType(),
+                    $node->getName(),
+                    $nocc,
                     $threshold
                 )
             );

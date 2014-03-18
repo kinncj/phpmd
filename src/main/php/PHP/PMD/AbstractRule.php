@@ -45,9 +45,6 @@
  * @link      http://phpmd.org
  */
 
-require_once 'PHP/PMD/Rule.php';
-require_once 'PHP/PMD/RuleViolation.php';
-
 /**
  * This is the abstract base class for pmd rules.
  *
@@ -393,7 +390,7 @@ abstract class PHP_PMD_AbstractRule implements PHP_PMD_Rule
 
 
     /**
-     * Returns the raw string value of a configured property or throws an 
+     * Returns the raw string value of a configured property or throws an
      * exception when no property with <b>$name</b> exists.
      *
      * @param string $name The property identifier.

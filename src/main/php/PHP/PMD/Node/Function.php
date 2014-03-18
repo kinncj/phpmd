@@ -46,8 +46,6 @@
  * @link       http://phpmd.org
  */
 
-require_once 'PHP/PMD/Node/AbstractCallable.php';
-
 /**
  * Wrapper around a PHP_Depend function node.
  *
